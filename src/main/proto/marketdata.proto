@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+option java_multiple_files = true;
+option java_package = "com.excelian.demo.common.data.marketdata";
+option java_outer_classname = "MarketDataProto";
+
+// simple market data proto definition
+
+message MarketData {
+    string symbol = 1;
+    double bid = 2;
+    double ask = 3;
+    int32 volume = 4;
+}
